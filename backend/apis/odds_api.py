@@ -1,11 +1,18 @@
 import requests
 from datetime import datetime, timezone
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 BASE_URL = 'https://api.sportsgameodds.com/v2'
 
+ODDS_API_KEY = os.getenv('ODDS_API_KEY')
+if not ODDS_API_KEY:
+    raise ValueError("ODDS_API_KEY environment variable is required")
+
 headers = {
-    'X-Api-Key': '58e3f7b9080bc769ab3ff334bc46f044'
+    'X-Api-Key': API_KEY
 }
 
 SPORTS_URL = f'{BASE_URL}/sports/'
