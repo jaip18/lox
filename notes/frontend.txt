@@ -1,0 +1,38 @@
+navbar:
+    - icon (home button)
+    - player lookup
+    - ban list
+    - 
+    - about
+        - include a little description of why, how, and functionality
+          and include link to github repo
+
+filter tab:
+    - define x = interval of games
+    - sport/league
+    - type of bets (ML or player prop)
+        - specificity of bettinge line (rebounds, points, etc.)
+    - type of success
+        - percentage (bet hit on 9/10 games)
+        - expected value (factoring in payout)
+    - team
+    - player
+    - position
+
+bets tableau:
+
+model success percentage:
+    - overall success rate of model factoring in recent and past predictions
+
+live scores tab:
+    - use api to display games going on today
+
+COMPONENTS:
+    - NavBar 
+    - FilterTab 
+    - Tableau
+        - BetTab 
+    - PercentTab 
+    - ScoreTab
+        - LeagueTab
+        - GameTab

@@ -1,0 +1,19 @@
+apis:
+    sports book betting lines:
+    
+    player stats:
+
+logic:
+    - 'x' interval of time to find how often a player hit a certain line
+    - consider matchups + injuries
+
+database:
+    - house recent data and current data
+    - use db to compute accuracy of model using past data as well
+
+file functions:
+    - main.py: defines FastAPI app, takes in frontend requests
+    - models.py: defines db tables using SQLAlchemy. Each class is a table
+    - crud.py: contains functions to create, read, update, or delete records in db
+    - database.py: handles connection to PostgreSQL, returns data to frontend
+    - venv: python virtual environment to keep dependencies isolated

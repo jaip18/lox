@@ -1,0 +1,12 @@
+alembic (to update DB):
+1. alembic revision --autogenerate -m "insert note"
+2. alembic upgrade head
+
+access DB:
+psql -U lox_main -d lox_database
+
+venv activation:
+source venv/bin/activate
+
+uvicorn main:app --reload
+
